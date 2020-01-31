@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "http-server ./dist -p 80"
   },
   "dependencies": {
+    "http-server": "^0.11.1",
     "core-js": "^2.6.10",
     "jexia-sdk-js": "^4.2.3",
     "register-service-worker": "^1.6.2",
