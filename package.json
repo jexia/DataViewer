@@ -8,8 +8,8 @@
     "start": "http-server ./dist -p 80 -a 0.0.0.0"
   },
   "dependencies": {
-    "http-server": "^0.11.1",
     "core-js": "^2.6.10",
+    "http-server": "^0.11.1",
     "jexia-sdk-js": "^4.2.3",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
     "@vue/cli-plugin-pwa": "^3.12.1",
-    "@vue/cli-service": "^3.12.1",
+    "@vue/cli-service": "^4.2.2",
     "sass": "^1.23.1",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-vuetify": "^0.6.3",
