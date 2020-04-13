@@ -102,34 +102,46 @@ let store = new Vuex.Store({
       
       jexiaClient().init(credentials, ds)
 
-      ds.dataset(context.state.cfg.resource).select().execute().then((data) => {
-        context.commit("init", data)
-      }).catch((error) => {
-        context.commit("error", error.message)
-      })
+      ds.dataset(context.state.cfg.resource).select().subscribe(
+        data => {
+          context.commit("init", data)
+        },
+        error => {
+          context.commit("error", error.message)
+        }
+      )
       
     },
     insert(context,record) {
-      ds.dataset(context.state.cfg.resource).insert(record).execute().then((data) => {
-        context.commit("insert", data)
-      }).catch((error) => {
-        context.commit("error", error.message)
-      })
+      ds.dataset(context.state.cfg.resource).insert(record).subscribe(
+        data => {
+          context.commit("insert", data)
+        },
+        error => {
+          context.commit("error", error.message)
+        }
+      )
     },
     update(context,record) { 
-      ds.dataset(context.state.cfg.resource).update(record).execute().then((data) => {
-        context.commit("update", data)
-      }).catch((error) => {
-        context.commit("error", error.message)
-      }) 
+      ds.dataset(context.state.cfg.resource).update(record).subscribe(
+        data => {
+          context.commit("update", data)
+        },
+        error => {
+          context.commit("error", error.message)
+        }
+      )
       
     },
     delete(context,id) { 
-      ds.dataset(context.state.cfg.resource).delete().where(field("id").isEqualTo(id)).execute().then((data) => {
-        context.commit("delete", data)
-      }).catch((error) => {
-        context.commit("error", error.message)
-      })
+      ds.dataset(context.state.cfg.resource).delete().where(field("id").isEqualTo(id)).subscribe(
+        data => {
+          context.commit("delete", data)
+        },
+        error => {
+          context.commit("error", error.message)
+        }
+      )
       
     },
   },
