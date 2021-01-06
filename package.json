@@ -23,7 +23,7 @@
     "@vue/cli-plugin-babel": "^3.12.1",
     "@vue/cli-plugin-pwa": "^3.12.1",
     "@vue/cli-service": "^4.2.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "minimist": "^1.2.5",
     "sass": "^1.23.1",
     "sass-loader": "^7.1.0",
