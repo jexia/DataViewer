@@ -16,7 +16,7 @@
     "vue": "^2.6.10",
     "vue-json-editor": "^1.4.0",
     "vuetable-2": "^2.0.0-beta.4",
-    "vuetify": "^2.1.7",
+    "vuetify": "^2.6.10",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
